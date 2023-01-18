@@ -26,7 +26,9 @@ export function TwitterFollowCard({ userName, name, initialIsFollowing }) {
           onClick={() => {
             setIsFollowing(!isFollowing)
           }}>
-          <span className='tw-followCard-text'>{isFollowing ? ' Siguiendo' : 'Seguir'}</span>
+          <span className='tw-followCard-text'>
+            {isFollowing ? ' Siguiendo' : 'Seguir'}
+          </span>
           <span className='tw-followCard-stopFollow '>Dejar de seguir</span>
         </button>
       </aside>
